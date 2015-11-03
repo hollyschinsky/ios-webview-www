@@ -104,8 +104,8 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "config.xml"
-  s.resources = "www/*"
+
+  s.resources = "resources/*"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
