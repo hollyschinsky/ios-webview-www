@@ -65,7 +65,7 @@ For example, a Podfile in a native project might look like this to set it up for
 ![Pods in Native Project](_imgs/step-pods.png)
 7. Now use a Cordova View in your native project. Open the **Main.storyboard** file 
 and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
-![Create Single View Project](_imgs/step1.png)
+![Create Single View Project](_imgs/step-vc.png)
 
 
 ### Run it
