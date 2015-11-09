@@ -1,5 +1,7 @@
 ### PHONEGAP IOS WEBVIEW PROTOTYPE PODFILE ###
 
+# This file must simply be named Podfile in your native iOS project
+
 # Define a global platform for your project
 platform :ios, '8.0'
 

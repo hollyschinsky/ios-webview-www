@@ -1,5 +1,5 @@
 ## ios-webview-www
-The required resources needed for the sample iOS PhoneGap project template. 
+The required resources and instructions for embedding a PhoneGap webview into an iOS Native Project quickly.  
 
 ### Quick Start Usage
 1. Add the following to your native iOS project Podfile to get this dependency from the CocoaPods registry	
@@ -11,12 +11,6 @@ The required resources needed for the sample iOS PhoneGap project template.
 3. Close your native Xcode project and open the newly created `.xcworkspace` project in the same folder which now includes all of the Cordova dependency pods 
 
 4. You're ready to use Cordova dependecies. See below for further notes for specific details. 
-
-### Tips
-* Be sure to change the target name to your native project name
-* You may need to change the version of platform specified or specify certain versions for other plugins.
-* If you update anything in the podfile where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
-
 
 ### Detailed Usage - Embedding Cordova in a Native iOS Project
 [Short Demo Video](https://www.youtube.com/watch?v=AzGmTeMsXxI)
@@ -48,6 +42,12 @@ quickly test plugin setup.
 ![Running device plugin](_imgs/ss1.png)
 ![Running connection plugin](_imgs/ss2.png)
 ![Device Ready Fired](_imgs/ss3.png)	
+
+
+### Tips
+* Be sure to change the `target` name to your native project target name in the Podfile and ensure Podfile is in the root directory of your Xcode project
+* You may need to change the version of platform specified or specify certain versions for other plugins.
+* If you update anything in the podfile where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
 
 ### TODO (internal)
 1. Update the cordova_plugins.js file with the Cordova required plugin references being added and fixed.
