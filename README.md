@@ -54,15 +54,17 @@ For example, a Podfile in a native project might look like this to set it up for
 ### Embedding Cordova in a Native iOS Project
 ** This project assumes you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
 
-1. Create a Native Xcode Project - for example using the Single View Controller project
+1. Create a Native Xcode Project - for example using the Single View Controller project template
+![Create Single View Project](_imgs/step1.png)
 2. Add a `Podfile` - use the one from the sample prototype project or run `pod init` and modify it
 3. Run `pod install` from command line to install the Cordova dependencies
 4. Close your Xcode project 
-5. Open the newly created `.xcworkspace` file created from the `pod install`
-6. Use Cordova - for instance try the `CDVViewController` in your native project. Open the *Main.storyboard** file 
+5. Open the newly created `.xcworkspace` file created from the `pod install`. Note the new Pods folder now included:
+![Pods in Native Project](_imgs/step-pods.png)
+6. Use Cordova - for instance try the `CDVViewController` in your native project. Open the **Main.storyboard** file 
 and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
+![Create Single View Project](_imgs/step1.png)
 
-![Pods in Native Project](_imgs/pods.png)
 
 ### Run it
 Run the app. You should see the custom iOS template version of the PhoneGap Hello world sample running with the Device Ready event firing and 
