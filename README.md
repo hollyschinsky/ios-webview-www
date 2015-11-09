@@ -52,6 +52,8 @@ For example, a Podfile in a native project might look like this to set it up for
 
 
 ### Embedding Cordova in a Native iOS Project
+[Short Demo Video](https://www.youtube.com/watch?v=AzGmTeMsXxI)
+
 ** This project assumes you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
 
 1. Create a Native Xcode Project - for example using the Single View Controller project template
