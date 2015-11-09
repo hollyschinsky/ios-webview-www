@@ -59,9 +59,11 @@ For example, a Podfile in a native project might look like this to set it up for
 2. Add a `Podfile` - use the one from the sample prototype project or run `pod init` and modify it
 3. Run `pod install` from command line to install the Cordova dependencies
 4. Close your Xcode project 
-5. Open the newly created `.xcworkspace` file created from the `pod install`. Note the new Pods folder now included:
+5. Open the newly created `.xcworkspace` file created from the `pod install`. 
+![Install and Open](_imgs/step-install.png)
+6. Note the new Pods folder now included:
 ![Pods in Native Project](_imgs/step-pods.png)
-6. Use Cordova - for instance try the `CDVViewController` in your native project. Open the **Main.storyboard** file 
+7. Now use a Cordova View in your native project. Open the **Main.storyboard** file 
 and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
 ![Create Single View Project](_imgs/step1.png)
 
