@@ -62,15 +62,15 @@ For example, a Podfile in a native project might look like this to set it up for
 6. Use Cordova - for instance try the `CDVViewController` in your native project. Open the *Main.storyboard** file 
 and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
 
-![Pods in Native Project](pods.png)
+![Pods in Native Project](_imgs/pods.png)
 
 ### Run it
 Run the app. You should see the custom iOS template version of the PhoneGap Hello world sample running with the Device Ready event firing and 
 some messages indicating the use of some of the dependent plugins to ensure they've been properly referenced. 
 
-![Running device plugin](ss1.png)
-![Running connection plugin](ss2.png)
-![Device Ready Fired](ss3.png)
+![Running device plugin](_imgs/ss1.png)
+![Running connection plugin](_imgs/ss2.png)
+![Device Ready Fired](_imgs/ss3.png)
 
 **LOGS from `pod install`**
 
