@@ -1,31 +1,23 @@
 ## ios-webview-www
-The required resources needed for the sample iOS PhoneGap project template. Includes all the core plugins as well. 
-
-Refer to the [Prototype for iOS Embedded Webviews Project](https://github.com/phonegap/phonegap-webview-ios) for example of using with the **CordovaLib** framework and plugins.
-
-**THIS LINE WIlL CHANGE TO POINT TO PODSPEC IN REGISTRY**
-
-	pod 'phonegap-hello', :path => '~/github-projects/ios-webview-www'
+The required resources needed for the sample iOS PhoneGap project template. Includes all the core plugins as well. Refer to the [Prototype for iOS Embedded Webviews Project](https://github.com/phonegap/phonegap-webview-ios) for example of using with the **CordovaLib** framework and plugins.
 
 ### Usage
-####1) Add this to your native iOS project podfile (dev't)
-	pod 'phonegap-hello', :path => '~/github-projects/ios-webview-www'
-
-or 
-####Add this line to native project podfile (once submitted to cocoapods site)
-	pod 'phonegap-hello'
+1. Add the following to your native iOS project Podfile to get this dependency from the CocoaPods registry	
+	`pod 'phonegap-hello'`	
 	
-##### 2) Install the pods referenced in podfile, including this one from the terminal using the CocoaPods `pod` command:
-	pod install
+*** The iOS Embedded WebView Prototype project includes a sample Podfile with all Cordova dependencies set up including this one. Refer to it to get started
+ quickly. 
 	
-##### 3) Close the native Xcode project and open the newly created `.xcworkspace` project which now includes all the pods installed. 
-For example - see project **Webview2.xcworkspace**
+2. Install the pods referenced in the Podfile, including this one from the terminal using the CocoaPods `pod` command:
+	`pod install`
+	
+3. Close the native Xcode project and open the newly created `.xcworkspace` project which now includes all of the Cordova dependency pods 
 
 
-### Notes
+### Example PodFile with Cordova Dependencies
 For example, a Podfile in a native project might look like this to set it up for Cordova use:
 
-	platform :ios, '6.0'
+	platform :ios, '8.0'
 
 	pod 'Cordova’
 	pod 'CordovaPlugin-device’
@@ -103,3 +95,8 @@ the device plugin is running.
 	Sending stats
 	Sending stats
 	Pod installation complete! There are 16 dependencies from the Podfile and 16 total pods installed.
+	
+	
+### TODO
+1. Update the cordova_plugins.js file with the Cordova required plugin references being added and fixed.
+ 

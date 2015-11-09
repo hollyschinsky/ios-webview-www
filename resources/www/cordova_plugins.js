@@ -14,13 +14,13 @@ module.exports = [
             "console"
         ]
     },
-    {
+    /*{
         "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
         "id": "cordova-plugin-statusbar.statusbar",
         "clobbers": [
             "window.StatusBar"
         ]
-    },
+    },*/
     {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
@@ -469,7 +469,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-console": "1.0.1",
-    "cordova-plugin-statusbar": "1.0.1",
+    //"cordova-plugin-statusbar": "1.0.1",
     "cordova-plugin-device": "1.0.1",
     "cordova-plugin-network-information": "1.0.1",
     "cordova-plugin-battery-status": "1.1.0",
