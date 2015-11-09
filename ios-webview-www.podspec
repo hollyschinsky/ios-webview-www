@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "phonegap-hello"
+  s.name         = "ios-webview-www"
   s.version      = "0.0.1"
-  s.summary      = "Phonegap hello world sample project for iOS."
+  s.summary      = "PhoneGap sample template project for iOS."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,8 +38,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "Apache License"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,9 +52,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "Holly Schinsky" => "hollyschinsky@gmail.com" }
-  # Or just: s.author    = "Holly Schinsky"
-  # s.authors            = { "Holly Schinsky" => "hollyschinsky@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Holly Schinsky"
+  s.social_media_url   = "http://twitter.com/devgirlfl"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

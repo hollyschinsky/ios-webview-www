@@ -3,10 +3,10 @@ The required resources needed for the sample iOS PhoneGap project template. Incl
 
 ### Usage
 1. Add the following to your native iOS project Podfile to get this dependency from the CocoaPods registry	
-	`pod 'phonegap-hello'`	
+	`pod 'ios-webview-www'`	
 	
-*** The iOS Embedded WebView Prototype project includes a sample Podfile with all Cordova dependencies set up including this one. Refer to it to get started
- quickly. 
+*The iOS Embedded WebView Prototype project includes a sample Podfile with all Cordova dependencies set up including this one. Refer to it to get started
+ quickly.* 
 	
 2. Install the pods referenced in the Podfile, including this one from the terminal using the CocoaPods `pod` command:
 	`pod install`
@@ -14,7 +14,7 @@ The required resources needed for the sample iOS PhoneGap project template. Incl
 3. Close the native Xcode project and open the newly created `.xcworkspace` project which now includes all of the Cordova dependency pods 
 
 
-### Example PodFile with Cordova Dependencies
+### Example Podfile with Cordova Dependencies
 For example, a Podfile in a native project might look like this to set it up for Cordova use:
 
 	platform :ios, '8.0'
@@ -39,7 +39,7 @@ For example, a Podfile in a native project might look like this to set it up for
 	pod 'CordovaPlugin-media-capture', '~> 0.2'
 	pod 'CordovaPlugin-media', '~> 0.2'
 
-	pod 'phonegap-hello', :path => '~/github-projects/ios-webview-www'
+	pod 'ios-webview-www'
 
 	target ‘iOS-Webview-Proto’ do
 
@@ -52,7 +52,7 @@ For example, a Podfile in a native project might look like this to set it up for
 
 
 ### Embedding Cordova in a Native iOS Project
-** This project assumed you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
+** This project assumes you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
 
 1. Create a Native Xcode Project - for example using the Single View Controller project
 2. Add a `Podfile` - use the one from the sample prototype project or run `pod init` and modify it
@@ -62,10 +62,15 @@ For example, a Podfile in a native project might look like this to set it up for
 6. Use Cordova - for instance try the `CDVViewController` in your native project. Open the *Main.storyboard** file 
 and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
 
-![Example 1](ex1.png)
+![Pods in Native Project](pods.png)
 
-7. Run the app. You should see the PhoneGap Hello world sample running with the Device Ready event firing and some messages indicating 
-the device plugin is running. 
+### Run it
+Run the app. You should see the custom iOS template version of the PhoneGap Hello world sample running with the Device Ready event firing and 
+some messages indicating the use of some of the dependent plugins to ensure they've been properly referenced. 
+
+![Running device plugin](ss1.png)
+![Running connection plugin](ss2.png)
+![Device Ready Fired](ss3.png)
 
 **LOGS from `pod install`**
 
@@ -99,4 +104,5 @@ the device plugin is running.
 	
 ### TODO
 1. Update the cordova_plugins.js file with the Cordova required plugin references being added and fixed.
- 
+2. Licensing - updated if needed
+3. Re-tag and submit with any changes to resources (plugins and cordova_plugins.js)
