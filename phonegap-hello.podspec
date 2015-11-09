@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
+  s.description  = <<-DESC "A PhoneGap sample project to get started quickly with an embedded webview in a native iOS project."
                    DESC
 
   s.homepage     = "https://github.com/hollyschinsky/ios-webview-www"

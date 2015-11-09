@@ -3,28 +3,24 @@ The required resources needed for the sample iOS PhoneGap project template. Incl
 
 Refer to the [Prototype for iOS Embedded Webviews Project](https://github.com/phonegap/phonegap-webview-ios) for example of using with the **CordovaLib** framework and plugins.
 
-**MUST CHANGE THIS LINE**
-
+**THIS LINE WIlL CHANGE TO POINT TO PODSPEC IN REGISTRY**
 
 	pod 'phonegap-hello', :path => '~/github-projects/ios-webview-www'
 
-###1) Add this to native project podfile (dev't)
+### Usage
+####1) Add this to your native iOS project podfile (dev't)
 	pod 'phonegap-hello', :path => '~/github-projects/ios-webview-www'
 
 or 
-###Add this to native project podfile (once submitted to cocoapods site)
+####Add this line to native project podfile (once submitted to cocoapods site)
 	pod 'phonegap-hello'
 	
-### 2) Install pods referenced in pod file
+##### 2) Install the pods referenced in podfile, including this one from the terminal using the CocoaPods `pod` command:
 	pod install
 	
-### 3) Close native Xcode project and open new .xcworkspace project referencing the Pods installed
+##### 3) Close the native Xcode project and open the newly created `.xcworkspace` project which now includes all the pods installed. 
 For example - see project **Webview2.xcworkspace**
 
-
-Podspec for hello world project, core platform plugins and required files located at:
-[https://github.com/hollyschinsky/ios-webview-www]
-(https://github.com/hollyschinsky/ios-webview-www)	
 
 ### Notes
 For example, a Podfile in a native project might look like this to set it up for Cordova use:
@@ -53,30 +49,33 @@ For example, a Podfile in a native project might look like this to set it up for
 
 	pod 'phonegap-hello', :path => '~/github-projects/ios-webview-www'
 
-	target ‘Webview2’ do
+	target ‘iOS-Webview-Proto’ do
 
 	end
 
+### Tips
 * Be sure to change the target name to your native project name
 * You may need to change the version of platform specified or specify certain versions for other plugins.
-* If you update anything in the pod file where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
+* If you update anything in the podfile where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
 
 
-## Steps
-** Requires you to install cocoa pods (add link here)
+### Embedding Cordova in a Native iOS Project
+** This project assumed you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
 
-1. Create Native Xcode Project
-2. Add Podfile from sample prototype
- (or run `pod init` and modify it)
-3. Run `pod install` from command line
-4. Close Xcode project 
-5. Open the newly created `.xcworkspace` file in the same location where pod install ran
-6. Now use a CDVViewController in the Storyboard and try to run it.
-7. Open the *Main.storyboard** file in the main project directory for the native project in Xcode (make sure that's the entry point specified in the General tab settings for the project - Deployment Info section. There's a LaunchScreen.storyboard for the Splash screen too).
-8. Change the class for the ViewController to CDVViewController in the Identity Inspector where it says Custom Class (show screenshot)
-9. When the app runs you should see some messages indicating the device version and the cordova device ready work
+1. Create a Native Xcode Project - for example using the Single View Controller project
+2. Add a `Podfile` - use the one from the sample prototype project or run `pod init` and modify it
+3. Run `pod install` from command line to install the Cordova dependencies
+4. Close your Xcode project 
+5. Open the newly created `.xcworkspace` file created from the `pod install`
+6. Use Cordova - for instance try the `CDVViewController` in your native project. Open the *Main.storyboard** file 
+and change the Custom Class value from the default `ViewController` to a `CDVViewController` in the *Identity Inspector*  
 
-LOGS from pod install
+![Example 1](ex1.png)
+
+7. Run the app. You should see the PhoneGap Hello world sample running with the Device Ready event firing and some messages indicating 
+the device plugin is running. 
+
+**LOGS from `pod install`**
 
 	Analyzing dependencies
 	Fetching podspec for `phonegap-hello` from `~/github-projects/ios-webview-www`
