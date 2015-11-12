@@ -2,20 +2,23 @@
 The required resources and instructions for embedding a PhoneGap webview into an iOS Native Project quickly.  
 
 ### Quick Start Usage
-1. Add the following to your native iOS project Podfile to get this dependency from the CocoaPods registry	
-	`pod 'ios-webview-www'`	
+1. Add the following to your native iOS project Podfile to get this dependency from the CocoaPods registry:	
+		
+		pod 'ios-webview-www'	
 	
 2. Install the pods referenced in the Podfile from the command line using the CocoaPods `pod` command:
-	`pod install`
-	
-3. Close your native Xcode project and open the newly created `.xcworkspace` project in the same folder which now includes all of the Cordova dependency pods 
 
-4. You're ready to use Cordova dependecies. See below for further notes for specific details. 
+		pod install
+	
+3. Close your native Xcode project and open the newly created `.xcworkspace` project in the same folder which now includes 
+all of the Cordova dependency pods. 
+
+4. You're ready to use any of the Cordova dependencies, for example the `CDVViewController`. See below for further details. 
 
 ### Detailed Usage - Embedding Cordova in a Native iOS Project
 [Short Demo Video](https://www.youtube.com/watch?v=AzGmTeMsXxI)
 
-** This project assumes you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
+**NOTE:** This project assumes you have [previously installed CocoaPods](https://guides.cocoapods.org/using/getting-started.html) 
 
 1. Create a Native Xcode Project - for example using the Single View Controller project template
 ![Create Single View Project](_imgs/step1.png)
@@ -45,11 +48,7 @@ quickly test plugin setup.
 
 
 ### Tips
-* Be sure to change the `target` name to your native project target name in the Podfile and ensure Podfile is in the root directory of your Xcode project
-* You may need to change the version of platform specified or specify certain versions for other plugins.
-* If you update anything in the podfile where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
+- Be sure to change the `target` name to your native project target name in the Podfile and ensure Podfile is in the root directory of your Xcode project
+- You may need to change the version of platform specified or specify certain versions for other plugins.
+- If you update anything in the podfile where you have to run a `pod install` again, you must close the Workspace project in Xcode and open the newly generated one. 
 
-### TODO (internal)
-1. Update the cordova_plugins.js file with the Cordova required plugin references being added and fixed.
-2. Licensing - updated if needed
-3. Re-tag and submit with any changes to resources (plugins and cordova_plugins.js)
