@@ -28,8 +28,7 @@ pod 'CordovaPlugin-FileManager'
 pod 'CordovaPlugin-media'
 
 # The following includes the PhoneGap iOS Platform Project Template for a quick start
-# The path to the local folder will be removed when it's officially in the CocoaPods Registry
-pod 'ios-webview-www', :path => '~/github-projects/ios-webview-www'
+pod 'ios-webview-www'
 
 # Change the target value to the name of your native Xcode project
 target 'iOS-Webview-Proto' do
