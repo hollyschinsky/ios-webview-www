@@ -30,20 +30,17 @@
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
     </feature>
-    <!--<feature name="StatusBar">
+    <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
     </feature>
     <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarStyle" value="lightcontent" />-->
+    <preference name="StatusBarStyle" value="lightcontent" />
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
-    </feature>
-    <feature name="Battery">
-        <param name="ios-package" value="CDVBattery" />
     </feature>
     <feature name="Compass">
         <param name="ios-package" value="CDVCompass" />
@@ -64,10 +61,10 @@
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
     </feature>
-    <!--<feature name="Camera">
+    <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
-    <preference name="CameraUsesGeolocation" value="false" />-->
+    <preference name="CameraUsesGeolocation" value="false" />
     <feature name="Contacts">
         <param name="ios-package" value="CDVContacts" />
     </feature>
@@ -79,10 +76,9 @@
     <feature name="Globalization">
         <param name="ios-package" value="CDVGlobalization" />
     </feature>
-    <feature name="Media">
-        <param name="ios-package" value="CDVSound" />
+    <feature name="Capture">
+        <param name="ios-package" value="CDVCapture" />
     </feature>
-
 
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />

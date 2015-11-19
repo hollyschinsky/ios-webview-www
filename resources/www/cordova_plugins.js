@@ -14,13 +14,13 @@ module.exports = [
             "console"
         ]
     },
-    /*{
+    {
         "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
         "id": "cordova-plugin-statusbar.statusbar",
         "clobbers": [
             "window.StatusBar"
         ]
-    },*/
+    },
     {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
@@ -42,14 +42,7 @@ module.exports = [
         "clobbers": [
             "Connection"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-battery-status/www/battery.js",
-        "id": "cordova-plugin-battery-status.battery",
-        "clobbers": [
-            "navigator.battery"
-        ]
-    },
+    },    
     {
         "file": "plugins/cordova-plugin-device-orientation/www/CompassError.js",
         "id": "cordova-plugin-device-orientation.CompassError",
@@ -318,6 +311,20 @@ module.exports = [
             "window.FileWriter"
         ]
     },
+                  {
+                  "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+                  "id": "cordova-plugin-file-transfer.FileTransferError",
+                  "clobbers": [
+                               "window.FileTransferError"
+                               ]
+                  },
+                  {
+                  "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+                  "id": "cordova-plugin-file-transfer.FileTransfer",
+                  "clobbers": [
+                               "window.FileTransfer"
+                               ]
+                  },
     {
         "file": "plugins/cordova-plugin-file/www/Flags.js",
         "id": "cordova-plugin-file.Flags",
@@ -436,20 +443,7 @@ module.exports = [
             "navigator.device.capture"
         ]
     },
-    {
-        "file": "plugins/cordova-plugin-media/www/MediaError.js",
-        "id": "cordova-plugin-media.MediaError",
-        "clobbers": [
-            "window.MediaError"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-media/www/Media.js",
-        "id": "cordova-plugin-media.Media",
-        "clobbers": [
-            "window.Media"
-        ]
-    },
+    
     {
         "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
         "id": "cordova-plugin-globalization.GlobalizationError",
@@ -469,10 +463,9 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-console": "1.0.1",
-    //"cordova-plugin-statusbar": "1.0.1",
+    "cordova-plugin-statusbar": "1.0.1",
     "cordova-plugin-device": "1.0.1",
     "cordova-plugin-network-information": "1.0.1",
-    "cordova-plugin-battery-status": "1.1.0",
     "cordova-plugin-device-orientation": "1.0.1",
     "cordova-plugin-device-motion": "1.1.1",
     "cordova-plugin-geolocation": "1.0.1",
@@ -483,7 +476,6 @@ module.exports.metadata =
     "cordova-plugin-contacts": "1.1.0",
     "cordova-plugin-file": "3.0.0",
     "cordova-plugin-media-capture": "1.0.1",
-    "cordova-plugin-media": "1.0.1",
     "cordova-plugin-globalization": "1.0.1"
 }
 // BOTTOM OF METADATA
